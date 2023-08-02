@@ -52,20 +52,6 @@ export default function PageThree() {
                   the music and sound effects to support the storyline, and
                   deliver the final product on time and under budget.
                 </Text>
-                <Text>
-                  After two decades of audio and video post-production work in
-                  Nashville and Atlanta, I created Tangerine Hero in 2011 to do
-                  what I love: using my digital toolbox to create images and
-                  sounds that convey the arc of a story, illuminated by emotion.
-                </Text>
-                <br />
-                <Text>
-                  I can find the essentials in a mountain of footage, cut them
-                  down to a clear, powerful narrative, illustrate complex
-                  concepts with motion graphics, compose, record, edit, and mix
-                  the music and sound effects to support the storyline, and
-                  deliver the final product on time and under budget.
-                </Text>
               </Box>
               <Box>
                 <Stack
