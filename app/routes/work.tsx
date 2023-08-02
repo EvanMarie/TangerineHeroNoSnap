@@ -13,8 +13,7 @@ export default function PageTwo() {
         <VStack
           w="100%"
           h="100%"
-          height="80vh"
-          spacing={{ base: "0px", md: "15px", lg: "20px" }}
+          spacing={{ base: "15px", md: "20px", lg: "20px" }}
         >
           <VStack w="100%" h="100%" spacing={1}>
             <SectionHeading>- Motion Graphics -</SectionHeading>
