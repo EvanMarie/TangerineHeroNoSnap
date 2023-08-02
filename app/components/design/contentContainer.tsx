@@ -6,7 +6,13 @@ interface ContentContainerProps {
 
 export default function ContentContainer({ children }: ContentContainerProps) {
   return (
-    <Flex w="100%" justify="center" align="center" pt="10px" overflow="hidden">
+    <Flex
+      w="100%"
+      justify="center"
+      align="center"
+      pt="10px"
+      position="relative"
+    >
       {children}
     </Flex>
   );
