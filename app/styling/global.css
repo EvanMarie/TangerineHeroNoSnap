@@ -1,0 +1,139 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* .snapScroll {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 0ms;
+}*/
+
+.mainBackground {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    padding-top: 75px;
+    z-index: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+    background: linear-gradient(90deg, #742701 0%, #d15024 25%, #ff612b 50%, #ff8221 75%, #facc4b 100%);
+        background-size: 200% 200%;
+        animation: gradientAnimation 60s linear infinite;
+    }
+
+    
+    @keyframes gradientAnimation {
+        0% {
+            background-position: 0% 50%;
+        }
+    
+        50% {
+            background-position: 100% 50%;
+        }
+    
+        100% {
+            background-position: 0% 50%;
+        }
+    } 
+
+/* Hide mobile image by default */
+.video-background.mobile {
+    display: none;
+}
+
+/* Show mobile image and hide desktop video on small screens */
+@media only screen and (max-width: 768px) {
+    .video-background.desktop {
+        display: none;
+    }
+
+    .video-background.mobile {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    .video-background.mobile img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+/* ------------------------------DONWLOAD VERSION ----------------------------------------- */
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    pointer-events: none
+}
+
+.video-background video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* Hide mobile video on larger screens */
+@media screen and (min-width: 768px) {
+
+    /* adjust this breakpoint to your needs */
+    .video-background.mobile {
+        display: none;
+    }
+}
+
+/* Hide desktop video on smaller screens */
+@media screen and (max-width: 767px) {
+
+    /* adjust this breakpoint to your needs */
+    .video-background.desktop {
+        display: none;
+    }
+}
+
+
+/* ----------------------------------------------------------------------- */
+
+.videoCardContainer {
+    height: 0;
+    padding-bottom: 56.25%;
+    /* 16:9 Aspect Ratio */
+    position: relative;
+}
+
+
+.cardVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 10px;
+}

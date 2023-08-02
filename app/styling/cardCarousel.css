@@ -1,0 +1,43 @@
+.carousel-outer {
+    width: 100%;
+    background-color: rgba(56, 19, 1, 0.5);
+    position: relative;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.7), 0px -2px 8px 0px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-container {
+    overflow: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0px 20px;
+}
+
+@media (min-width: 992px) {
+    .carousel-container {
+        padding: 10px 20px;
+    }
+}
+
+.carousel-track {
+    height: 100%;
+    padding: 10px 0px;
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.carousel-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.carousel-container {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
